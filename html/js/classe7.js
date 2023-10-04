@@ -14,7 +14,7 @@ function tele(){
     let preu = 5/60;
     let preuF = (segonsT*preu)+10;
     let preuE = parseInt(preuF / 100);
-    let preuC = parseInt(preuF%100);
+    let preuC = Math.round(preuF%100);
 
     console.log(tempsT.getHours() + ":" + tempsT.getMinutes() + ":" + tempsT.getSeconds());
     console.log("preu: "+preuE+" euros y "+preuC+" centim")
